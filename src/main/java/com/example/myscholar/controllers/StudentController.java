@@ -18,6 +18,6 @@ public class StudentController {
     public  String getStudents(Model model){
 
         model.addAttribute("students", studentRepository.findAll());
-        return "students";
+        return "students/list";
     }
 }
